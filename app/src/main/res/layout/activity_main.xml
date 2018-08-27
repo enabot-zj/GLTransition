@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kevin.gltransition.MainActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_display_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_wipe_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水滴"/>
+        <Button
+            android:id="@+id/bt_linear_blur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线性模糊"/>
+        <Button
+            android:id="@+id/bt_dot_curtain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆点窗帘"/>
+        <Button
+            android:id="@+id/bt_simple_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="故障"/>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"/>
+</LinearLayout>
